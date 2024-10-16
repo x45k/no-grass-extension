@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Grass Censor",
+    "version": "1.0",
+    "description": "Censors the word 'grass' on every website.",
+    "permissions": ["scripting"],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "run_at": "document_end"
+      }
+    ]
+  }
+  
